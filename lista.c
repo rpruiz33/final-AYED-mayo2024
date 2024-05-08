@@ -105,8 +105,8 @@ void liberarLista(ListaPtr lista) {
 void mostrarJugadores(ListaPtr l){
     NodoPtr actual= getPrimero( l);
 
-//while(actual!=NULL){
-for(int i=0;i<5;i++){
+while(actual!=NULL){
+//for(int i=0;i<5;i++){
     mostrarJugador(*(JugadorPtr*) getDato(actual));
 
     actual= getSiguiente(actual);
